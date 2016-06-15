@@ -1,6 +1,6 @@
 {
   "name": "eyp-resolvconf",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "author": "eyp",
   "summary": "manages /etc/resolv.conf file",
   "license": "Apache-2.0",
@@ -8,8 +8,7 @@
   "project_page": "http://systemadmin.es",
   "issues_url": null,
   "dependencies": [
-    {"version_requirement":">= 1.0.0","name":"puppetlabs/stdlib"},
-    {"name":"eyp/chattr","version_requirement":">= 0.1.0"}
+    {"version_requirement":">= 1.0.0","name":"puppetlabs/stdlib"}
   ],
   "operatingsystem_support": [
     {
@@ -31,6 +30,10 @@
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [ "14.04" ]
+    },
+    {
+      "operatingsystem": "SLES",
+      "operatingsystemrelease": [ "11.3" ]
     }
   ]
 }
