@@ -1,6 +1,6 @@
 {
   "name": "eyp-resolvconf",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "author": "eyp",
   "summary": "manages /etc/resolv.conf file",
   "license": "Apache-2.0",
@@ -29,7 +29,7 @@
     },
     {
       "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [ "14.04" ]
+      "operatingsystemrelease": [ "14.04", "16.04" ]
     },
     {
       "operatingsystem": "SLES",
