@@ -34,14 +34,16 @@ class resolvconf (
       name   => $resolvconf::params::glibcheaders,
     }
 
-    $fact_eyp_resolvconf_maxns = getvar('::eyp_resolvconf_maxns')
+    # Error: Evaluation Error: Comparison of: Integer > String, is not possible. Caused by 'A Numeric is not comparable to non Numeric'
 
-    if ( ($fact_eyp_resolvconf_maxns != undef) and ($resolverlistsize > $fact_eyp_resolvconf_maxns) )
-    {
-      notify { 'resolvconf limits':
-        message => "more resolvers configured (${resolverlistsize}) that system's limit (${fact_eyp_resolvconf_maxns})"
-      }
-    }
+    # $fact_eyp_resolvconf_maxns = getvar('::eyp_resolvconf_maxns')
+    #
+    # if ( ($fact_eyp_resolvconf_maxns != undef) and ($resolverlistsize > $fact_eyp_resolvconf_maxns) )
+    # {
+    #   notify { 'resolvconf limits':
+    #     message => "more resolvers configured (${resolverlistsize}) that system's limit (${fact_eyp_resolvconf_maxns})"
+    #   }
+    # }
 
     if ($disableimmutable)
     {
