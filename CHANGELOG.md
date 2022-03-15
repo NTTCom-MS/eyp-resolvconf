@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.25
+
+* Added **Ubunutu 20** support
+
 ## 0.1.24
 
 * rework **eyp_resolvconf_maxns** fact

@@ -34,7 +34,7 @@ class resolvconf::params {
             {
               $use_netplan=false
             }
-            /^18.*$/:
+            /^18.*$|20.*$/:
             {
               $use_netplan=true
             }
