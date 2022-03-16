@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.26
+
+* Allowing to configure default resolvers when using netplan
+
 ## 0.1.25
 
 * Added **Ubunutu 20** support
